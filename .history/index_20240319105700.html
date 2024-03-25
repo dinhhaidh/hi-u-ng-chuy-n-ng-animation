@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: wheat;
+    }
+    .container{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    .home__image{
+        position: relative;
+    }
+    .home__img{
+        position: absolute;
+        max-width: 100%;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        animation: fly 4s ease-in-out infinite;
+    }
+    
+    @keyframes fly{
+        0%{
+            transform: translate(-50%, -46%);
+        }
+        50%{
+            transform: translate(-50%, -4%);
+        }
+        0%{
+            transform: translate(-50%, -46%);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="home__image">
+            <img src="./white-shoe.png" alt="" class="home__img">
+        </div>
+    </div>
+</body>
+</html>
